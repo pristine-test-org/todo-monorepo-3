@@ -46,3 +46,5 @@ Each app is a separate Vercel project connected to this repository:
 | Framework | Vite |
 | Build command | `npm run build` |
 | Deployment Protection | Standard Protection (production open, previews behind Vercel's login) |
+
+Each app deploys from `main`; the first push after the projects were connected built production for all three.
