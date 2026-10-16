@@ -153,6 +153,10 @@ export default function App() {
           ))}
         </ol>
       )}
+
+      <p className="state">
+        <a href="/impeccable-test-drive.html">weekly digest</a>
+      </p>
     </main>
   );
 }
