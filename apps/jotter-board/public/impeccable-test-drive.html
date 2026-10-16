@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board tips - Jotter Board</title>
+    <style>
+      /* Test drive page for Impeccable: every flaw below is intentional. */
+      :root {
+        --canvas: #eef1f8;
+        --topbar: #1b2340;
+        --card: #ffffff;
+        --ink: #172036;
+        --accent: #4f46e5;
+        font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+      body {
+        margin: 0;
+        background: var(--canvas);
+        color: var(--ink);
+      }
+      header {
+        padding: 0.9rem 1.5rem;
+        background: var(--topbar);
+      }
+      header a {
+        color: #f4f6fc;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      main {
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 2rem 0 4rem;
+      }
+      h1 {
+        margin: 0 1.5rem 1rem;
+        font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+        font-size: 2.25rem;
+        letter-spacing: -0.02em;
+        /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+        background: linear-gradient(90deg, #4f46e5, #0f8a6a);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .lede {
+        /* Intentional, for Impeccable's test drive: body text flush with the viewport edges, no background. */
+        margin: 0 calc(50% - 50vw);
+        padding: 0;
+        max-width: none;
+      }
+      .tips {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+        margin: 1.5rem 1.5rem 0;
+        padding: 0;
+        list-style: none;
+      }
+      .tips li {
+        padding: 0.9rem;
+        border-radius: 8px;
+        background: var(--card);
+      }
+      .tips h2 {
+        margin: 0 0 0.4rem;
+        font-size: 1rem;
+      }
+      .tips p {
+        margin: 0 0 0.6rem;
+      }
+      .note {
+        /* Intentional, for Impeccable's test drive: light grey text, well under 4.5:1 on white. */
+        color: #c4c4c4;
+        font-size: 0.875rem;
+      }
+      .tip-bar {
+        height: 6px;
+        width: 30%;
+        border-radius: 999px;
+        background: #ff6a00; /* Intentional, for Impeccable's test drive: a colour that is not in DESIGN.md. */
+        /* Intentional, for Impeccable's test drive: transition on a layout property. */
+        transition: width 0.3s;
+      }
+      .tips li:hover .tip-bar {
+        width: 100%;
+      }
+      .back {
+        display: inline-block;
+        margin: 1.5rem 1.5rem 0;
+        /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+        font-size: 10px;
+        color: var(--accent);
+      }
+      @media (max-width: 640px) {
+        .tips {
+          grid-template-columns: minmax(0, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header><a href="/">Jotter Board</a></header>
+    <main>
+      <h1>Board tips</h1>
+      <p class="lede">Keep each card to one small job, and move it to Done the moment it is finished, so the board always shows what is really left.</p>
+      <ul class="tips">
+        <li>
+          <h2>Write short cards</h2>
+          <p>One line is enough. If a card needs a paragraph, split it into two cards.</p>
+          <p class="note">Cards over a line long are harder to scan.</p>
+          <div class="tip-bar"></div>
+        </li>
+        <li>
+          <h2>Clear the Done column</h2>
+          <p>Remove finished cards at the end of the week and start the next one fresh.</p>
+          <p class="note">A short Done column feels good to look at.</p>
+          <div class="tip-bar"></div>
+        </li>
+      </ul>
+      <a class="back" href="/">Back to the board</a>
+    </main>
+  </body>
+</html>

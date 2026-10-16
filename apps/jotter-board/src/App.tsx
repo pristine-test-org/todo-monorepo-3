@@ -170,6 +170,10 @@ export default function App() {
             ))}
           </div>
         )}
+
+        <p className="tips-link">
+          <a href="/impeccable-test-drive.html">Board tips</a>
+        </p>
       </main>
     </div>
   );

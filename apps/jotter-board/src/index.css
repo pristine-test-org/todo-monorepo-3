@@ -302,6 +302,15 @@ button:focus-visible {
   color: var(--danger);
 }
 
+.tips-link {
+  margin: 2rem 0 0;
+  font-size: 0.875rem;
+}
+
+.tips-link a {
+  color: var(--accent);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
