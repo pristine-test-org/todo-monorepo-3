@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board tips - Jotter Board</title>
+    <style>
+      /* Intentional, for Impeccable's test drive: every flaw below is planted on purpose. */
+      body {
+        margin: 0;
+        font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+        background: #eef1f8;
+        color: #172036;
+      }
+      .topbar {
+        background: #1b2340;
+        color: #f4f6fc;
+        padding: 1rem 1.5rem;
+      }
+      .topbar a {
+        color: #f4f6fc;
+      }
+      main {
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 1.5rem;
+      }
+      h1 {
+        font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+        letter-spacing: -0.02em;
+        /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+        background: linear-gradient(90deg, #4f46e5, #e11d8f);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .tray {
+        background: #e1e6f2;
+        border-radius: 14px;
+        padding: 1rem 1.5rem;
+        /* Intentional, for Impeccable's test drive: hard-coded colour that is not in DESIGN.md. */
+        border-left: 6px solid #ff6a00;
+      }
+      .muted {
+        /* Intentional, for Impeccable's test drive: light grey text, well under 4.5:1 on this tray. */
+        color: #c4c9d6;
+      }
+      .meter {
+        height: 8px;
+        width: 30%;
+        background: #4f46e5;
+        border-radius: 999px;
+        /* Intentional, for Impeccable's test drive: transition on a layout property. */
+        transition: width 0.3s;
+      }
+      .meter:hover {
+        width: 90%;
+      }
+      .back {
+        /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+        font-size: 10px;
+      }
+      .edge {
+        /* Intentional, for Impeccable's test drive: body text flush with the viewport edges, no background. */
+        margin: 2rem calc(50% - 50vw) 0;
+        padding: 0;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar"><a href="/">Jotter Board</a></header>
+    <main>
+      <h1>Tips for a tidy board</h1>
+      <section class="tray">
+        <p>Keep To do short. Three or four cards at a time is plenty, and anything bigger can be split before it lands here.</p>
+        <p class="muted">Finished cards move to Done with one tap, so there is nothing to tidy at the end of the day.</p>
+        <div class="meter" aria-hidden="true"></div>
+        <p><a class="back" href="/">Back to the board</a></p>
+      </section>
+      <p class="edge">Cards are only as useful as their titles, so write them as the next small thing to do and not as a whole project.</p>
+    </main>
+  </body>
+</html>

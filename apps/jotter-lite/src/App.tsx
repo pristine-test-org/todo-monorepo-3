@@ -78,6 +78,9 @@ export default function App() {
         <h1 className="wordmark">
           <span className="prompt" aria-hidden="true">~/</span>jotter-lite
         </h1>
+        <a className="tips-link" href="/impeccable-test-drive.html">
+          [tips]
+        </a>
         {status === "ready" && todos.length > 0 && (
           <p className="count">
             <strong>{remaining}</strong>/{todos.length} open

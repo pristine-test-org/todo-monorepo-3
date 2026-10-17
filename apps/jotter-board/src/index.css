@@ -86,6 +86,12 @@ input {
   color: var(--topbar-ink);
 }
 
+.tips-link {
+  margin-left: auto;
+  margin-right: 1rem;
+  color: var(--topbar-ink);
+}
+
 .board-page {
   max-width: 64rem;
   margin: 0 auto;

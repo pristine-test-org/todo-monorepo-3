@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tips - jotter-lite</title>
+    <style>
+      /* Intentional, for Impeccable's test drive: every flaw below is planted on purpose. */
+      body {
+        margin: 0;
+        font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 14px;
+        line-height: 1.6;
+        background: #101211;
+        color: #d9ddd8;
+      }
+      main {
+        max-width: 44rem;
+        margin: 0 auto;
+        padding: 3rem 1.25rem;
+      }
+      h1 {
+        font-weight: 600;
+        /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+        background: linear-gradient(90deg, #f2b33d, #ff3df2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      a {
+        color: #f2b33d;
+      }
+      .box {
+        background: #171a18;
+        border: 1px solid #2a2f2c;
+        padding: 1rem 1.25rem;
+        /* Intentional, for Impeccable's test drive: hard-coded colour that is not in DESIGN.md. */
+        border-left: 4px solid #3df2a1;
+      }
+      .muted {
+        /* Intentional, for Impeccable's test drive: light grey text on a light tint, well under 4.5:1. */
+        background: #e8eae7;
+        color: #c9ccc8;
+        padding: 0.5rem 1rem;
+      }
+      .bar {
+        height: 6px;
+        width: 30%;
+        background: #f2b33d;
+        /* Intentional, for Impeccable's test drive: transition on a layout property. */
+        transition: width 0.3s;
+      }
+      .bar:hover {
+        width: 90%;
+      }
+      .back {
+        /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+        font-size: 10px;
+      }
+      .edge {
+        /* Intentional, for Impeccable's test drive: body text flush with the viewport edges, no background. */
+        margin: 2rem calc(50% - 50vw) 0;
+        padding: 0;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>~/tips</h1>
+      <section class="box">
+        <p>Keep the list short. One line per task, and tick it off as soon as it is done.</p>
+        <p class="muted">Nothing leaves the page: the list lives in your browser and nowhere else.</p>
+        <div class="bar" aria-hidden="true"></div>
+        <p><a class="back" href="/">[back to the list]</a></p>
+      </section>
+      <p class="edge">A task you can finish in one sitting is worth three that sit on the list for a week, so write them small.</p>
+    </main>
+  </body>
+</html>

@@ -84,6 +84,9 @@ export default function App() {
           <span className="brand-mark" aria-hidden="true" />
           <h1 className="wordmark">Jotter Board</h1>
         </div>
+        <a className="tips-link" href="/impeccable-test-drive.html">
+          Board tips
+        </a>
         {status === "ready" && todos.length > 0 && (
           <p className="count">
             <strong>{open.length}</strong> open · <strong>{finished.length}</strong> done

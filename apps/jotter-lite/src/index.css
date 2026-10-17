@@ -41,6 +41,11 @@ input {
   padding: 3rem 1.25rem 5rem;
 }
 
+.tips-link {
+  margin-left: auto;
+  color: var(--accent);
+}
+
 .head {
   display: flex;
   align-items: baseline;
