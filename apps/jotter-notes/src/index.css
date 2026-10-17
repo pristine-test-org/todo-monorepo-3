@@ -225,6 +225,15 @@ button:focus-visible,
   color: var(--danger);
 }
 
+.foot {
+  margin-top: 2rem;
+  color: var(--ink-soft);
+}
+
+.foot a {
+  color: inherit;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

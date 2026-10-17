@@ -153,6 +153,10 @@ export default function App() {
           ))}
         </ol>
       )}
+
+      <footer className="foot">
+        <a href="/impeccable-test-drive.html">test drive</a>
+      </footer>
     </main>
   );
 }
