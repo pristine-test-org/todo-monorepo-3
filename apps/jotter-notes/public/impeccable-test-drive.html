@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jotter-notes: test drive</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      /* Tokens from DESIGN.md: bg, surface, ink, ink-soft, line, accent. */
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #101211;
+        color: #d9ddd8;
+        font-family: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      main {
+        padding: 3rem 0 5rem;
+      }
+      header,
+      section {
+        max-width: 44rem;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+      }
+      h1 {
+        margin: 0 0 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        /* Intentional, for Impeccable's test drive: gradient text on the heading (a slop tell). */
+        background: linear-gradient(90deg, #3fd1c4, #7d857f);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edge, no background. */
+      .flush {
+        margin: 0 0 1.5rem;
+        padding: 0;
+      }
+      /* Intentional, for Impeccable's test drive: text in a solid grey well under 4.5:1 on the page background. */
+      .hint {
+        color: #3a3f3c;
+      }
+      /* Intentional, for Impeccable's test drive: a colour that is not in the DESIGN.md palette. */
+      .tag {
+        display: inline-block;
+        padding: 0 0.5rem;
+        border: 1px solid #ff3da5;
+        color: #ff3da5;
+      }
+      /* Intentional, for Impeccable's test drive: a transition on a layout property (width). */
+      .meter {
+        height: 0.5rem;
+        width: 30%;
+        background: #3fd1c4;
+        transition: width 0.3s;
+      }
+      .meter:hover {
+        width: 90%;
+      }
+      /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      .back {
+        font-size: 10px;
+        color: #3fd1c4;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1><span aria-hidden="true">~/</span>test-drive</h1>
+      </header>
+      <p class="flush">
+        This page exists only to show Impeccable reviewing a change to jotter-notes, so it is safe to delete.
+      </p>
+      <section>
+        <p class="hint">Three open items, nothing urgent. Type a task on the list and press enter.</p>
+        <p><span class="tag">[draft]</span></p>
+        <div class="meter" role="presentation"></div>
+        <p><a class="back" href="/">back to the list</a></p>
+      </section>
+    </main>
+  </body>
+</html>
